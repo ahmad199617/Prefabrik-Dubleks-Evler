@@ -821,7 +821,6 @@
                         .itam-img {
                             width: 320px;
                             height: 320px;
-                            background-color: red;
                             overflow: hidden;
                             display: flex;
                             align-items: stretch;
@@ -858,7 +857,7 @@
                             height: 100%;
                             display: flex;
                             justify-content: center;
-                            align-items: stretch;
+                            align-items: center;
                         }
                         .itam-text-div-S p{
                             margin: 0;
@@ -878,6 +877,10 @@
                             background-color: #1A4990;
                             position: absolute;
                             opacity: 0%;
+                        }
+                        .itam-img-M {
+                            transition: all 0.2s;
+                            width: inherit;
                         }
                         /*****************PRODUCTS phone**********************/
                         @media only screen and (max-width: 1000px) {
@@ -944,9 +947,11 @@
                                 justify-content: flex-end;
                                 align-items: flex-end;
                             }
-                            .itam-img-M{
-                                width: 100%;
+                            .itam-img-M {
+                                transition: all 0.2s;
+                                width: inherit;
                             }
+
 
 
 
@@ -956,10 +961,9 @@
 
                         }
                         /*****************PRODUCTS hover**********************/
-                        .itam-img-M{transition: all 0.2s;}
 
                         .itam-text-div-SS:hover .line-text{opacity: 100%;}
-                        .itam-img-M:hover {transform: scale(1.2);}
+                        .itam-img-AA:hover .itam-img-M {transform: scale(1.2);}
                         
                         /*****************PRODUCTS phone**********************/
                         @media only screen and (max-width: 1000px) {
